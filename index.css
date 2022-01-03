@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans&family=Noto+Sans+JP:wght@300;700&family=Spline+Sans&display=swap');
+
+/* 
+titulo: font-family: 'Lora', serif;
+subtitulos: font-family: 'Noto Sans', sans-serif;
+parrafos: font-family: 'Noto Sans JP', sans-serif;
+encabezados: font-family: 'Spline Sans', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    
+}
+
+:root {
+    --titulo: #BF0B3B;
+    --destacado: #005077;
+    --subtitulos: #105B80;
+ }
+ ul li{
+    list-style: none;
+ }
+ a{
+     text-decoration: none;
+     font-family: 'Noto Sans JP', sans-serif;
+ }
+ p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+ }
+i{
+    color: grey;
+}
+
+
+ body{
+     
+     text-align: center;
+ }
+ /* header */
+
+ header{
+     display: flex;
+     padding-top: 10px;
+     flex-direction: row;
+     justify-content: space-between;
+     padding-left: 50px;
+     padding-right: 50px;
+     border-bottom: .5px solid rgb(212, 206, 206);
+     color: grey!important;
+     height: 40px;
+     
+ }
+ header .izq{
+     display: flex;
+ }
+ header .izq a{
+     padding-right: 15px;
+ }
+ header .izq p{
+     font-size: 13px;
+ }
+ header .der{
+    font-size: 14px;
+    font-weight: 700;
+ }
+ header .der a{
+     color: grey;
+ }
+
+ /* main */
+
+ /* titulo */
+ main .titulo{
+     display: flex;
+     font-family: 'Lora', serif;
+     justify-content: center;
+     margin-top: 25px;
+     font-size: 28px;
+     align-items: center;
+ }
+main .titulo img{
+    width: 30%;
+}
+ main .titulo div{
+     background-color: var(--titulo);
+     margin-right: 15px;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+ }
+ main .titulo p{
+     color: white;
+     font-weight: 900;
+     font-size: 25px;
+ }
+ /* navegacion */
+ main nav{
+     border-bottom: .5px solid rgb(223, 216, 216);
+     padding-bottom: 15px;
+     margin-top: 30px;
+ }
+main nav ul {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: center;
+    margin-top: 15px;
+}
+main nav ul li{
+    font-size: 14px;
+    margin-right: 20px;
+}
+main nav ul li a{
+    font-weight: 900;
+}
+/* lista titulos */
+main .list{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+main .list  i{
+    color: var(--titulo);
+    font-size: 13px;
+    margin-right: 5px;
+}
+main .list h3{
+    color: var(--destacado);
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: 'Spline Sans', sans-serif;
+}
+main .list p{
+    font-size: 15px;
+    font-weight: 300;
+}
+/* secciones */
+
+main .secciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+main .secciones .pri{
+    width: 28%;
+    border-right: .5px solid rgb(223, 216, 216);
+    padding-right: 10px;
+}
+main .secciones .pri .a h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    text-align: initial;
+}
+main .secciones .pri .a img{
+    width: 100%;
+    margin: 10px 0;
+}
+main .secciones .pri .a p{
+    font-weight: 300;
+    font-size: 17px;
+    text-align: initial;
+    margin-bottom: 10px;
+}
+main .secciones .pri .a{
+    border-bottom: .5px solid rgb(223, 216, 216);
+}
+main .secciones .pri .b h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 10px;
+    font-size: 15px;
+}
+main .secciones .pri .b h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    text-align: initial;
+    margin: 8px 0;
+}
+main .secciones .pri .b{
+    border-bottom: .5px solid rgb(223, 216, 216);
+}
+main .secciones .pri .c h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 10px;
+    font-size: 15px;
+}
+main .secciones .pri .c h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    text-align: initial;
+    margin: 8px 0;
+}
+main .secciones .pri .c p{
+    font-weight: 300;
+    font-size: 15px;
+    text-align: initial;
+    margin-bottom: 30px;
+}
+main .secciones .seg{
+    width: 44%;
+    border-right: .5px solid rgb(223, 216, 216);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+main .secciones .seg div img{
+    width: 100%;
+}
+main .secciones .seg .a h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 20px;
+    font-size: 15px;
+}
+main .secciones .seg .a h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    text-align: initial;
+    margin: 8px 0;
+}
+main .secciones .seg .a p{
+    font-weight: 300;
+    font-size: 16px;
+    text-align: initial;
+    margin-bottom: 13px;
+}
+main .secciones .seg .a{
+    border-bottom: .5px solid rgb(223, 216, 216);
+
+}
+main .secciones .seg .b h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 18px;
+    font-size: 15px;
+}
+main .secciones .seg .b h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    text-align: initial;
+    margin: 8px 0;
+}
+main .secciones .seg .b p{
+    font-weight: 300;
+    font-size: 14px;
+    text-align: initial;
+    margin-bottom: 13px;
+}
+main .secciones .seg .b{
+    border-bottom: .5px solid rgb(223, 216, 216);
+}
+main .secciones .seg .c h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 18px;
+    font-size: 15px;
+}
+main .secciones .seg .c div{
+    display: flex;
+}
+main .secciones .seg .c div img{
+    width: 40%;
+    margin: 15px 0;
+    margin-right: 13px;
+}
+main .secciones .seg .c div h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    text-align: initial;
+    margin: 8px 0; 
+}
+main .secciones .ter{
+    width: 28%;
+    padding-left: 15px;
+}
+main .secciones .ter .a h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 13px;
+    font-size: 15px;
+}
+main .secciones .ter .a h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    text-align: initial;
+    margin: 18px 0; 
+}
+main .secciones .ter .a p{
+    font-weight: 300;
+    font-size: 16px;
+    text-align: initial;
+    margin-bottom: 13px;
+}
+main .secciones .ter .a {
+    border-bottom: .5px solid rgb(223, 216, 216);
+}
+main .secciones .ter .b h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 18px;
+    font-size: 15px;
+}
+main .secciones .ter .b h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    text-align: initial;
+    margin: 13px 0; 
+}
+main .secciones .ter .b{
+    border-bottom: .5px solid rgb(223, 216, 216);
+}
+main .secciones .ter .c h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 15px;
+    font-size: 15px;
+}
+main .secciones .ter .c h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    text-align: initial;
+    margin: 8px 0; 
+}
+main .secciones .ter .c{
+    border-bottom: .5px solid rgb(223, 216, 216);
+}
+main .secciones .ter .d h3{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--subtitulos);
+    text-align: initial;
+    margin-top: 15px;
+    font-size: 15px;
+}
+main .secciones .ter .d h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    text-align: initial;
+    margin: 8px 0; 
+}
+main .secciones .ter div{
+    margin-left: -10px;
+}
+main .secciones .ter div img{
+    width: 100%;
+    margin: 10px 0;
+    margin-left: 6px;
+    
+}
